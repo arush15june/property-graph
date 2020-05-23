@@ -24,7 +24,7 @@ Implementation of a property graph, inspired by Designing Data-Intensive Applica
   property_graph = graph.Graph()
   n_idaho = graph.add_node({'type': 'State', 'name': 'Idaho'})
   n_lucy = graph.add_node({"type": "Person", "name": "Lucy"})
-  add_edge(n_lucy, "BORN_IN", n_idaho)
+  graph.add_edge(n_lucy, "BORN_IN", n_idaho)
   # ...
   # Check example and docstrings in graph.py.
 ```
