@@ -257,7 +257,3 @@ if __name__ == "__main__":
                     break
 
         print("and she lives in London, the one in Europe!")
-
-
-
-
