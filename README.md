@@ -16,3 +16,20 @@ Implementation of a property graph, inspired by Designing Data-Intensive Applica
   - The vertex at which the edge ends (Head Vertex).
   - A label to describe the kind of relationship between the two vertices.
   - A collection of properties (k/v).
+
+## Usage
+- Graph
+```python
+  import graph
+  property_graph = graph.Graph()
+  n_idaho = graph.add_node({'type': 'State', 'name': 'Idaho'})
+  n_lucy = graph.add_node({"type": "Person", "name": "Lucy"})
+  add_edge(n_lucy, "BORN_IN", n_idaho)
+  # ...
+  # Check example and docstrings in graph.py.
+```
+
+- Lucy example
+```bash
+  python graph.py
+```
